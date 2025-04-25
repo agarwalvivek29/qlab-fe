@@ -98,24 +98,23 @@ export default function StatsCards() {
       {/* Right Actions */}
       <div className="flex flex-col space-y-4 mt-0">
         <TooltipProvider>
-        <Dialog>
-  <DialogTrigger asChild>
-    <Button
-      variant="destructive"
-      className="text-red-500 bg-red-100 hover:bg-red-200 text-lg font-semibold px-8 py-7 w-48"
-    >
-      Square off All
-    </Button>
-  </DialogTrigger>
-  <DialogContent className="max-w-sm">
-    <DialogHeader>
-      <DialogTitle className="text-red-600">Square off All</DialogTitle>
-      <DialogDescription>
-        Close all open positions and cancel all pending orders
-      </DialogDescription>
-    </DialogHeader>
-  </DialogContent>
-</Dialog>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                variant="destructive"
+                className="text-red-500 bg-red-100 hover:bg-red-200 text-lg font-semibold px-8 py-7 w-48"
+              >
+                Square off All
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent className="bg-white p-4 border border-gray-300 shadow-md rounded-md max-w-xs text-sm text-gray-800">
+              <div className="text-red-600 font-semibold mb-1">Square off All</div>
+              <div>Close all open positions and cancel all pending orders</div>
+            </TooltipContent>
+          </Tooltip>
+
+
+
 
           {/* Total P&L Modal Button */}
           <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
