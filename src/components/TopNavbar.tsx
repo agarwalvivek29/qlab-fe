@@ -21,10 +21,10 @@ export default function TopNavbar() {
   const pathname = usePathname();
 
   return (
-    <header className="w-full max-w-[1920px] h-16 bg-white border-b shadow-sm flex items-center justify-between px-6 mx-auto font-inter">
+    <header className="w-full max-w-[1920px] h-16 bg-white border-b shadow-sm flex items-center justify-between px-6 mx-auto font-inter fixed top-0 z-50">
       {/* Left: Logo */}
       <Link href="/" className="flex items-center">
-        <Image src="/logo.png" alt="Logo" width={60} height={20} />
+        <Image src="/logo.png" alt="Logo" width={150} height={20} />
       </Link>
 
       {/* Center: Navigation Buttons */}

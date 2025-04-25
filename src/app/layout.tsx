@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ReduxProvider>
           <div className="flex">
-            <main className="flex-1 bg-gray-50 min-h-screen">{children}</main>
+            <main className="flex-1 bg-gray-50 min-h-screen pt-[65px]">{children}</main>
           </div>
         </ReduxProvider>
       </body>
